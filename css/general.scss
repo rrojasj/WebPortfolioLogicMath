@@ -34,6 +34,7 @@ $px-80: 5rem;
 $px-90: 5.625rem;
 $px-100: 6.25rem;
 $px-200: 12.5rem;
+$px-250: 15.625rem;
 $px-300: 18.75rem;
 $px-400: 25rem;
 $px-500: 31.25rem;
@@ -47,6 +48,8 @@ $px-1300: 81.25rem;
 $px-1400: 87.5rem;
 $px-1500: 93.75rem;
 $px-1600: 100rem;
+$px-2000: 125rem;
+$px-2200: 137.5rem;
 
 $rem-1: 16px;
 $rem-2: 32px;
@@ -128,7 +131,7 @@ $transition-ease: ease;
 /****************************** Estilos Globales ******************************/
 html {
     font-size: $font-size-base;
-    max-height: $px-1600;
+    max-height: $px-2200;
 }
 
 body, html {
@@ -137,14 +140,20 @@ body, html {
     overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: $font-family-pt-serif;
+}
+
+h1 {
     color: $color-palette-1-1 !important;
 }
 
 h2 {
-    font-family: $font-family-pt-serif;
     color: $color-palette-4-1 !important;
+}
+
+h3 {
+    color: $color-palette-5-1 !important;
 }
 
 p {
@@ -266,7 +275,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .footer-text {
-    color: $color-palette-1-1;
+    color: $color-palette-4-1;
     font-size: larger;
     font-weight: 500;
 }

@@ -46,13 +46,13 @@
                             <a data-scroll class="nav-link text-white option-menu" href="#menu-opt-intro">Introducción</a>
                         </li>
                         <li class="nav-item">
-                            <a id="menu-opt-info" data-scroll class="nav-link text-white option-menu" href="#">Contenidos</a>
+                            <a id="menu-opt-info" data-scroll class="nav-link text-white option-menu" href="#info-cards">Contenidos</a>
                         </li>
                         <li class="nav-item">
-                            <a id="menu-opt-struct" data-scroll class="nav-link text-white option-menu" href="#">Progreso</a>
+                            <a id="menu-opt-struct" data-scroll class="nav-link text-white option-menu" href="#progress-banner">Progreso</a>
                         </li>
                         <li class="nav-item">
-                            <a id="menu-opt-progress" data-scroll class="nav-link text-white option-menu" href="#">Estructura</a>
+                            <a id="menu-opt-progress" data-scroll class="nav-link text-white option-menu" href="#module-structure">Estructura</a>
                         </li>
 
                         <!-- Submenu Información -->
@@ -336,108 +336,173 @@
         
     </section>
 
-    <!-- ---------------------------------------------------------- -->
-    <section class="separator-line animate__animated animate__slideInRight animate__delay-1s"></section>
-    <!-- ---------------------------------------------------------- -->
+    <div id="progress-banner" class="pt-5"></div>
 
     <!-- Sección: Progress banner -->
-    <section class="progress-banner">
+    <section class="pt-5 progress-banner">
         <br><br>
         <div class="container">
             <h2 class="text-center text-uppercase">Progreso</h2>
-            <div class="text1 d-flex align-items-center justify-content-center">
-                <h3 class="display-3">Lógica y Matemática</h3>
+            <div class="d-flex align-items-center justify-content-center">
+                <h3 class="text-uppercase">Lógica y Matemática</h3>
             </div>
         </div>
 
         <div class="container">
-
-            <!-- BARRA DE PROGRESO-->
             <div class="pt-5"></div>
-            <div class="progress">
-                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%; font-size: 1.125rem;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+            <h4 class="text-uppercase">Semanas:</h4>
+
+            <!-- Section: Progress Bar - Week Checkboxes -->
+            <div class="pt-3"></div>
+            <div id="progress-bar-week">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox1" value="option1" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox2" value="option2" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox3" value="option3" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox4" value="option4" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox5" value="option5" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox5">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox6" value="option6" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox6">6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox7" value="option7" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox7">7</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox9" value="option9" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox9">9</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox10" value="option10" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox10">10</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox11" value="option11" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox11">11</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox12" value="option12" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox12">12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox13" value="option13" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox13">13</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="weekCheckbox14" value="option14" disabled>
+                    <label class="form-check-label font-weight-bold" for="weekCheckbox14">14</label>
+                </div>
+            </div>
+
+            <!-- Progress Bar - Weeks -->
+            <div class="pt-3"></div>
+            <div class="progress" style="height: 20px;">
+                <div id="progress-bar-weeks" class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" font-size: 1.125rem;"></div>
+                <div class="pt-5"></div>
+            </div>
+
+            <div class="pt-5"></div>
+            <h4 class="text-uppercase">Módulos:</h4>
+
+            <!-- Section: Progress Bar - Module Checkboxes -->
+            <div class="pt-3"></div>
+            <div id="progress-bar-cb-module">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox1" value="option1">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox2" value="option2">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox3" value="option3">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox4" value="option4">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox5" value="option5">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox5">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox6" value="option6">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox6">6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="moduleCheckbox7" value="option7">
+                    <label class="form-check-label font-weight-bold" for="moduleCheckbox7">7</label>
+                </div>
+            </div>
+
+            <!-- Progress Bar - Modules -->
+            <div class="pt-3"></div>
+            <div class="progress" style="height: 20px;">
+                <div id="progress-bar-modules" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" font-size: 1.125rem;"></div>
                 <div class="pt-5"></div>
             </div>
 
         </div>
     </section>
 
-
-    <div class="pb-5"></div>
-
-    <div class="pt-5"></div>
-
-    <!-- Section: Recursos de información -->
-    <section class="pt-5 container">
-        <h2 class="pb-5 text-center text-uppercase">Guías y Recomendaciones</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-6 text-center pb-5">
-                <!-- Cuadro de lista informativo -->
-                <ul class="list-group">
-                    <li class="list-group-item list-group-bg text-white text-uppercase">Consejos</li>
-                    <li class="list-group-item lista">Cómo Cuidar tu Motor</li>
-                    <li class="list-group-item lista">Mantenimiento Preventivo</li>
-                    <li class="list-group-item lista">Consejos para el Ahorro de Combustible</li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-6 text-center pb-5">
-                <!-- Cuadro de lista interactivo -->
-                 <div class="list-group">
-                    <li class="list-group-item list-group-bg text-white text-uppercase">Consejos</li>
-                    <li class="list-group-item lista">Guía para el Cuidado del Vehículo</li>
-                    <li class="list-group-item lista">Manual de Mantenimiento Básico</li>
-                    <li class="list-group-item lista">Recomendaciones para la Seguridad Vial</li>
-                 </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="pb-5"></div>
-
-    <section class="pt-5">
+    <section>
         <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 75" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="0" y2="0"><stop stop-color="rgba(204, 219, 220, 1)" offset="0%"></stop><stop stop-color="rgba(204, 219, 220, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L60,58.3C120,47,240,23,360,15C480,7,600,13,720,25C840,37,960,53,1080,50C1200,47,1320,23,1440,20C1560,17,1680,33,1800,33.3C1920,33,2040,17,2160,15C2280,13,2400,27,2520,40C2640,53,2760,67,2880,71.7C3000,77,3120,73,3240,66.7C3360,60,3480,50,3600,51.7C3720,53,3840,67,3960,75C4080,83,4200,87,4320,85C4440,83,4560,77,4680,76.7C4800,77,4920,83,5040,71.7C5160,60,5280,30,5400,30C5520,30,5640,60,5760,65C5880,70,6000,50,6120,43.3C6240,37,6360,43,6480,51.7C6600,60,6720,70,6840,70C6960,70,7080,60,7200,60C7320,60,7440,70,7560,61.7C7680,53,7800,27,7920,20C8040,13,8160,27,8280,40C8400,53,8520,67,8580,73.3L8640,80L8640,100L8580,100C8520,100,8400,100,8280,100C8160,100,8040,100,7920,100C7800,100,7680,100,7560,100C7440,100,7320,100,7200,100C7080,100,6960,100,6840,100C6720,100,6600,100,6480,100C6360,100,6240,100,6120,100C6000,100,5880,100,5760,100C5640,100,5520,100,5400,100C5280,100,5160,100,5040,100C4920,100,4800,100,4680,100C4560,100,4440,100,4320,100C4200,100,4080,100,3960,100C3840,100,3720,100,3600,100C3480,100,3360,100,3240,100C3120,100,3000,100,2880,100C2760,100,2640,100,2520,100C2400,100,2280,100,2160,100C2040,100,1920,100,1800,100C1680,100,1560,100,1440,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path></svg>
 
     </section>
 
     <div class="pt-5"></div>
 
+    <!-- Section: Modules structure -->
 
-    <!-- Section: Testimonios -->
-    <!-- <section class="pt-5 pb-5 container">
-        <h2 class="text-center text-uppercase">Testimonios</h2>
-        <div class="pt-5 row">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img src="imgs/dw_p1_avatar_testimony_1.webp" class="img-fluid" alt="Testimonio 1" data-bs-toggle="tooltip" data-bs-placement="left" title="Testimonio 1">
-                <div class="">
-                    <h5 class="text-center">Servicio Rápido y Profesional</h5>
-                    <p class="text-center">"Excelente servicio, el personal fue muy profesional y resolvieron el problema rápidamente." - Adrián S.</p>
-                </div>
+    <!-- Section: Recursos de información -->
+    <section id="module-structure" class="pt-5 container">
+        <h2 class="pb-5 text-center text-uppercase">Estructura de los Módulos</h2>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 text-center pb-5">
+                <!-- Cuadro de lista informativo -->
+                <ul class="list-group">
+                    <li class="list-group-item list-group-bg text-white text-uppercase">Aprendizaje del módulo</li>
+                    <p class="pt-3 px-3">Redactar en 3 párrafos o 300 palabras (mínimo) cuáles fueron los aprendizajes más significativos que tuvo en relación con el módulo correspondiente. No es un resumen de los contenidos, sino una descripción de su experiencia de aprendizaje.</p>
+                </ul>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                
-                <img src="imgs/dw_p1_avatar_testimony_2.webp" class="img-fluid" alt="Testimonio 1" data-bs-toggle="tooltip" data-bs-placement="top" title="Testimonio 2">
-                <div class="">
-                    <h5 class="text-center">Reparación de Primera</h5>
-                    <p class="text-center">"Muy satisfecho con la reparación. La atención al cliente fue de primera y el coche quedó como nuevo." - Marta G.</p>
-                </div>
+            <div class="col-md-4 col-lg-4 text-center pb-5">
+                <!-- Cuadro de lista interactivo -->
+                 <div class="list-group">
+                    <li class="list-group-item list-group-bg text-white text-uppercase">Aporte</li>
+                    <p class="pt-3 px-3">Agregar un aporte interesante sobre una de las temáticas que se trabajaron en el módulo y que le ayude a profundizar en el tema. Por ejemplo: un dato curioso o histórico, un video, una imagen explicativa, etc.</p>
+                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                
-                <img src="imgs/dw_p1_avatar_testimony_3.webp" class="img-fluid" alt="Testimonio 1" data-bs-toggle="tooltip" data-bs-placement="top" title="Testimonio 3">
-                <div class="">
-                    <h5 class="text-center">Eficiencia y Transparencia</h5>
-                    <p class="text-center">"Llevé mi auto para una revisión y me sorprendió la eficiencia del taller. Sin duda, volveré." - Juan R.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img src="imgs/dw_p1_avatar_testimony_4.webp" class="img-fluid" alt="Testimonio 1" data-bs-toggle="tooltip" data-bs-placement="right" title="Testimonio 4">
-                <div class="pb-5">
-                    <h5 class="text-center">"Trabajo Impecable</h5>
-                    <p class="text-center">"Gran experiencia. El equipo hizo un trabajo increíble y el precio fue justo. Mi auto está excelente!" - Luis P.</p>
-                </div>
+            <div class="col-md-4 col-lg-4 text-center pb-5">
+                <!-- Cuadro de lista interactivo -->
+                 <div class="list-group">
+                    <li class="list-group-item list-group-bg text-white text-uppercase">Reto</li>
+                    <p class="pt-3 px-3">Agregar el reto que asigne la profesora en cada módulo. Debe aparecer el enunciado y la solución completa de cada ejercicio, problema o actividad que forme parte del reto.</p>
+                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
 
     <!-- Section: Footer -->
     <footer class="footer-style d-flex flex-wrap justify-content-between align-items-center fixed-bottom">
