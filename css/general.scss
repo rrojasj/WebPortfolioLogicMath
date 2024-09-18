@@ -90,7 +90,7 @@ $color-tertiary-grey: #818488;
 $color-secondary-black: #4c4848;
 $color-palette-1-1: #ccdbdc;
 $color-palette-1-2: #aac3c5;
-$color-palette-2-1: #9ad1d4;
+$color-palette-2-1: rgb(154, 209, 212);
 $color-palette-2-1-transp: #9ad1d470;
 $color-palette-2-2: #70bec2;
 $color-palette-2-2-transp: #70bec270;
@@ -100,6 +100,7 @@ $color-palette-4-1: #007ea7;
 $color-palette-4-2: #005c7a;
 $color-palette-5-1: #003249;
 $color-palette-5-2: #000e14;
+$color-banner-text: #d5c7e5;
 $color-contact-whatsapp: #22BF5B;
 $color-contact-whatsapp-hover: #15793A;
 $color-contact-instagram: #D61F5C;
@@ -116,6 +117,10 @@ $box-shadow: 0 0.375rem 0.938rem rgba(0, 0, 0, 0.2);
 
 $transition-duration: 0.5s;
 $transition-ease: ease;
+
+$banner-parallax: url(../imgs/lm_module_1_parallax.webp);
+$banner-padding: 8.75rem;
+$banner-text-size: 2.5rem;
 
 /****************************** Mixins ******************************/
 @mixin transition($properties, $duration, $timing-function: ease) {
@@ -140,7 +145,7 @@ body, html {
     overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: $font-family-pt-serif;
 }
 
@@ -148,13 +153,15 @@ h1 {
     color: $color-palette-1-1 !important;
 }
 
-h2 {
+h2, h6 {
     color: $color-palette-4-1 !important;
 }
 
-h3 {
+h3, h4 {
     color: $color-palette-5-1 !important;
 }
+
+
 
 p {
     font-family: $font-family-open-sans;
@@ -329,5 +336,35 @@ a[aria-current="page"] {
 a[aria-current="page"].dropdown-item.option-menu.navbar-menu-option:hover {
     background-color: $color-palette-1-2; /* Replace with the background color you want on hover */
     color: inherit; /* Replace with the text color you want on hover */
+}
+
+/****************************** Main Banner ******************************/
+.module-banner {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imgs/lm_modulo_1_banner.webp');
+    /* color del modo */
+    // background-color: $color-palette-6-1;
+    /* modo de color */
+    background-blend-mode: luminosity;
+    height: $px-600;
+    /* profundidad */
+    box-shadow: inset 0 0 0 1000px rgba(226, 221, 221, 0.4);
+    padding: $px-100;
+}
+
+.module-banner strong {
+    color: $color-palette-1-1;
+}
+
+.module-banner p {
+    // font-weight: lighter;
+    color: $color-palette-4-1 !important;
+}
+
+.espacio {
+    padding: 500px 0;
 }
 
