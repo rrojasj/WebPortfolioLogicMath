@@ -2,7 +2,16 @@
 @import "general.scss";
 
 /****************************** Global styles ******************************/
+$m-banner-1: url('../imgs/lm_module_1_banner.webp');
+$m-banner-2: url('../imgs/lm_module_2_banner.webp');
+$m-banner-3: url('../imgs/lm_module_1_banner.webp');
+$m-banner-4: url('../imgs/lm_module_1_banner.webp');
+$m-banner-5: url('../imgs/lm_module_1_banner.webp');
+$m-banner-6: url('../imgs/lm_module_1_banner.webp');
+$m-banner-7: url('../imgs/lm_module_1_banner.webp');
 
+$m-parallax-1: url(../imgs/lm_module_1_parallax.webp);
+$m-parallax-2: url(../imgs/lm_module_2_parallax.webp);
 
 /****************************** Separator line ******************************/
 .module-separator-line {
@@ -19,13 +28,21 @@ a.disabled {
     cursor: not-allowed;
 }
 
-/****************************** Main Banner ******************************/
+/****************************** Main Banner - Modules ******************************/
+.m-banner-1 {
+    background-image: $m-banner-1;
+}
+
+.m-banner-2 {
+    background-image: $m-banner-2;
+}
+
 .module-banner {
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
-    background-image: url('../imgs/lm_module_1_banner.webp');
+    // background-image: url('../imgs/lm_module_1_banner.webp');
     /* color del modo */
     // background-color: $color-palette-6-1;
     /* modo de color */
@@ -41,7 +58,7 @@ a.disabled {
 }
 
 p.module-banner-p {
-    color: $color-tertiary-grey !important;
+    color: $color-palette-5-1 !important;
 }
 
 /****************************** Module learning ******************************/
@@ -70,8 +87,15 @@ h5 {
 
 /****************************** Banner parallax ******************************/
 
+.m-parallax-1 {
+    background-image: $m-parallax-1;
+}
+
+.m-parallax-2 {
+    background-image: $m-parallax-2;
+}
+
 .banner-parallax {
-    background-image: $banner-parallax;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -114,3 +138,52 @@ h5 {
     border-width: 1px;
     @include transition(all, 0.3s);
 }
+
+/****************************** Section: Video challenge ******************************/
+.challenge-video-div {
+    position: relative;
+    width: 100%;
+    height: 25vh; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+.challenge-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    border-radius: 10px;
+}
+
+/****************************** Section: Video diagram ******************************/
+.logic-gate-video-div {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* Increase the height to make the video bigger */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logic-gate-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire video is visible */
+    z-index: -1;
+    border-radius: 10px;
+    background-color: black; /* Optional for filling empty space */
+}
+
+/****************************** Section: Challenge button ******************************/
+
+.btn-challenge {
+    background-color: $color-palette-4-1 !important;
+    color: $color-palette-1-1 !important;
+}
+

@@ -57,7 +57,7 @@
                             <a class="nav-link dropdown-toggle text-white option-menu" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Módulos</a>
                             <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
                                 <a class="dropdown-item option-menu disabled" href="#">Módulo 1</a>
-                                <a class="dropdown-item option-menu" href="#">Módulo 2</a>
+                                <a class="dropdown-item option-menu" href="module-2.html">Módulo 2</a>
                                 <a class="dropdown-item option-menu" href="#">Módulo 3</a>
                                 <a class="dropdown-item option-menu" href="#">Módulo 4</a>
                                 <a class="dropdown-item option-menu" href="#">Módulo 5</a>
@@ -76,7 +76,7 @@
 
     <!-- Section: Main Banner -->
     <section>
-        <div class="module-banner">
+        <div class="module-banner m-banner-1">
             <div class="container">
                 <div class="container">
                     <h1 class="pt-5">Razonamiento lógico-verbal-proposicional</h1>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Sección: Banner & Parallax -->
-    <section class="banner-parallax">
+    <section class="banner-parallax m-parallax-1">
         <div class="container">
             <blockquote class="banner-parallax-text">
                 "Es propio del sabio ordenar." <br> <cite>- Aristóteles, <em>Metafísica</em></cite>
@@ -269,6 +269,78 @@
     <section class="container pb-5">
         <h2 class="pb-5 text-center text-uppercase">Reto del módulo</h2>
 
+        <div class="challenge-video-div">
+            <video autoplay muted loop class="challenge-video animate__animated animate__fadeInDown animate__delay-1s" disablePictureInPicture>
+                <source src="videos/lm_challenge_1_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="pt-5"></div>
+        <div>
+            <p class="pt-3 fs-5 text-center text-justify-custom px-3">Estás diseñando un sistema de alarma básico para una casa. El sistema tiene <strong>tres</strong> sensores:</p>
+            <div class="">
+                <ul class="px-3 list-group">
+                    <li class="list-group-item list-style">
+                        <div class="row">
+                            <div class="col-4"><strong>Sensor de puerta (P)</strong></div>
+                            <div class="col-8">Se activa (1) si la puerta principal está abierta, y se desactiva (0) si está cerrada.</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-style">
+                        <div class="row">
+                            <div class="col-4"><strong>Sensor de ventana (V):</strong></div>
+                            <div class="col-8">Se activa (1) si alguna ventana está abierta, y se desactiva (0) si todas están cerradas</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-style">
+                        <div class="row">
+                            <div class="col-4"><strong>Sensor de movimiento (M):</strong></div>
+                            <div class="col-8">Se activa (1) si detecta movimiento dentro de la casa, y se desactiva (0) si no hay movimiento</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="pt-3"></div>
+                <div>
+                    <p class="pt-3 fs-3 text-justify-custom px-3 text-center">Requisito:</p>
+                    <ul class="px-3 list-group">
+                        <li class="list-group-item list-style">
+                            <div class="row">
+                                <div class="col-4"><strong>La alarma debe sonar (salida = 1) si:</strong></div>
+                                <div class="col-8"><strong>La puerta está abierta, o alguna ventana está abierta y hay movimiento detectado</strong></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="pt-3 fs-3 text-justify-custom px-3 text-center">Resolver:</p>
+                <ol class="px-3 list-group">
+                    <li class="list-group-item list-style">1. Represente el problema con compuertas lógicas en un diagrama</li>
+                    <li class="list-group-item list-style">2. Escriba la expresión booleana que representa la salida de la alarma en función de las entradas P, V y M</li>
+                    <li class="list-group-item list-style">3. Cree una tabla de verdad que muestre todas las combinaciones posibles de las entradas (P, V, M) y la salida correspondiente de la alarma</li>
+                </ol>
+        </div>
+
+    </section>
+
+    <!-- ---------------------------------------------------------- -->
+    <section class="module-separator-line animate__animated animate__slideInLeft animate__delay-1s"></section>
+    <!-- ---------------------------------------------------------- -->
+
+    <section class="pt-5 container">
+        <h2 class="text-center text-uppercase">Resultados</h2>
+        <div class="pt-3"></div>
+        <p class="fs-5 text-center"><em><strong>A = P &or; (V &and; M)</strong></em></p>
+        <p class="fs-5 text-center"><em>Diagrama de compuertas lógicas & Tabla de la verdad</em></p>
+        <p class="fs-5 text-center"></p>
+
+        <div class="logic-gate-video-div">
+            <video autoplay muted loop class="logic-gate-video" disablePictureInPicture>
+                <source src="videos/lm_logic_gate_diagram.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h2 class="pb-5 text-center text-uppercase"></h2>
 
     </section>
 
